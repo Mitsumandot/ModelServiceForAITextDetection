@@ -2,8 +2,23 @@
 
 GET http://127.0.0.1:8000/
 Accept: application/json
+
 ###
 
 GET http://127.0.0.1:8000/hello/User
 Accept: application/json
+
 ###
+POST http://127.0.0.1:8000/predict
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "text": "Artificial intelligence is transforming the modern world in numerous ways."
+  },
+  {
+    "id": 2,
+    "text": "Artificial intelligence is transforming the modern world in numerous ways."
+  }
+]
